@@ -1,6 +1,7 @@
 from selene.support.shared import browser
-from selene import be, have
 import pytest
+
+
 @pytest.fixture(scope='session', autouse=True)
 def open_browser():
     browser.config.window_height = 458
